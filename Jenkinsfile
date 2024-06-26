@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Checkout') {
             steps {
-                git url: 'https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Kristina_Lotocka_Jenkins', credentialsId: 'aws-credentials', branch: 'main'
+                git url: 'https://github.com/lotockatest/Jenkins_task.git', branch: 'main'
             }
         }
         stage ('Terraform Init') {
