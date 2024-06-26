@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Checkout') {
             steps {
-                git url: 'https://github.com/lotockatest/Jenkins_task.git', branch: 'main'
+                git url: 'https://github.com/lotockatest/Jenkins_task.git', branch: 'master'
             }
         }
         stage ('Terraform Init') {
